@@ -7,7 +7,7 @@ function main() {
     const r = constantSheet.getRange("A2:D" + lastRowParam);
     const result = r.getValues();
     const rowOffset = 2; //header + array starts from 0
-    const formulaStr = "=if(AND(NOT(ISBLANK(A_rowNum_)),ISBLANK(B_rowNum_)),\"www.youtube.com/watch?v=\"&A_rowNum_ , \"\")"
+    const formulaStr = "=if(AND(NOT(ISBLANK(A_rowNum_)),ISBLANK(B_rowNum_)),\"www.youtube.com/watch?v=\"&A_rowNum_ , \"\")";
 
         result.map((row, idx) => {
             let id = row[0];
