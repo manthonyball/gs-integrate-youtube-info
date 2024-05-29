@@ -9,10 +9,10 @@ This is a Google App Script Repo for fetching and checking Youtube(Y2) info init
 1. set-up a Google API for Youtube (YouTube Data API v3) and replace the value in `apiKey`
 2. set-up the Google SpreadSheet
     * Col-A - the Y2 video ID i.e. https://www.youtube.com/watch?v=BHlnhRw26FE <- Col-A = BHlnhRw26FE
-    * Col-B - [result] the result column, leave empty
-    * Col-C - [result] the spreadsheet result with formula `=if(AND(NOT(ISBLANK(A2)),ISBLANK(B2)),"www.youtube.com/watch?v="&A2 , "")`
-    * Col-D - [result] the Y2 video title 
     * Cell-G2 - the local of checking i.e. `CA`
+    * Col-B - [result] leave empty if no issue found
+    * Col-C - [result] auto. populate result with formula `=if(AND(NOT(ISBLANK(A2)),ISBLANK(B2)),"www.youtube.com/watch?v="&A2 , "")`
+    * Col-D - [result] auto. populate the Y2 video title 
 
 # Logic flow 
 1. grab the IDs in Col-A
