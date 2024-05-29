@@ -1,5 +1,5 @@
 # gs-integrate-youtube-info
-This is a Google App Script Repo for fetching and checking Youtube(Y2) info initiated by the video Id store in GSpreadSheet 
+This is a Google App Script Repo for fetching and checking Youtube(Y2) info 
 
 # Intention
 * originally the G-Spreadsheet is created for storage of the Youtube song list played by Foobar2000 Youtube component
