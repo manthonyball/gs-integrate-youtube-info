@@ -1,12 +1,12 @@
 # gs-integrate-youtube-info
 This is a Google App Script Repo for fetching and checking Youtube(Y2) info initiated by the video Id store in GSpreadSheet 
 
-# intention
+# Intention
 * originally the G-Spreadsheet is created for storage of the Youtube song list played by Foobar2000 Youtube component
-* GAppsScript was developed to check whether the video is wroking against whether in the current local is blocked or some typo 
+* gAppsScript was developed to check whether the video is wroking against whether it is blocked in the current local or some typo for the ID
   
 # Prerequisite
-1. set-up a Google API for Youtube (YouTube Data API v3) and replace the value of `apiKey`
+1. set-up a Google API for Youtube (YouTube Data API v3) and replace the value in `apiKey`
 2. set-up the Google SpreadSheet
     * Col-A - the Y2 video ID i.e. https://www.youtube.com/watch?v=BHlnhRw26FE <- Col-A = BHlnhRw26FE
     * Col-B - [result] the result column, leave empty
@@ -16,11 +16,11 @@ This is a Google App Script Repo for fetching and checking Youtube(Y2) info init
 
 # Logic flow 
 1. grab the IDs in Col-A
-2. filter against criteria (check `filter section`) ^1^
-3. make remote call to Y2 API
-4. update result 
+2. filter against criterias (check `filter section`) ^1^
+3. make the remote call to Y2 API
+4. update result in Col-C
 
-^1^ for code maintainablity concerns (clean code), each purpose of filtering is encapsulated with one function 
+^1^ for a better code maintainablity (clean code), each purpose of filtering is encapsulated by one function 
 
 # API reference 
 * https://developers.google.com/youtube/v3/docs/videos
