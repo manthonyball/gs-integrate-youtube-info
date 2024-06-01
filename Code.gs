@@ -48,11 +48,14 @@ function main() {
         });
 }
 function makeWebRequest(id) {
-    const apiKey = '_replace_the_key_'; // set-up!!!
-
-    let requestURL =
-        'https://www.googleapis.com/youtube/v3/videos?part=snippet&part=contentDetails&key=' + apiKey + '&id=' + id;
-    //Logger.log(requestURL)
+    const apiKey = PropertiesService.getScriptProperties().getProperties().apiKey	; // set-up at Project settings 
+    
+    const baseUrlVideos = "https://www.googleapis.com/youtube/v3/videos?";
+    const queryStringParts = "part=snippet&part=contentDetails";
+    const queryStringKey = "&key=" + apiKey ;
+    const queryStringId = "&id=" + id ;
+     
+    let requestURL = baseUrlVideos + queryStringParts + queryStringKey + queryStringId;
 
     try {
         const response = UrlFetchApp.fetch(requestURL, {
