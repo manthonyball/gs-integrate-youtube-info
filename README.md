@@ -2,11 +2,11 @@
 This is a Google App Script Repo for fetching and checking Youtube(Y2) info 
 
 # Intention
-* originally the G-Spreadsheet is created for storage of the Youtube song list played by Foobar2000 Youtube component
-* gAppsScript was developed to check whether the video is wroking against whether it is blocked in the current local or some typo for the ID
+* originally the G-Spreadsheet is created for storage of the Youtube song list consumed by the Foobar2000 Youtube component
+* gAppsScript was developed to check whether the video is wroking against whether it is blocked in the current local or whether the video ID is working
   
 # Set up 
-1. set-up a Google API for Youtube (YouTube Data API v3) and replace the value in `apiKey`
+1. set-up a Google API for Youtube (YouTube Data API v3) and replace the value in script propertise (consumed by the variable `apiKey`) 
 2. set-up the Google SpreadSheet
     * Col-A - the Y2 video ID i.e. https://www.youtube.com/watch?v=BHlnhRw26FE <- Col-A = BHlnhRw26FE
     * Cell-G2 - the local of checking i.e. `CA`
